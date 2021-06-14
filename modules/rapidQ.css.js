@@ -236,6 +236,10 @@ br {
   user-select      : none;
 }
 
+#rapidQ-error {
+  pointer-events   : none;
+}
+
 #rapidQ-qbar input {
   border           :  none;
   border-radius    :   3px;
