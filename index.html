@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./js/dependents.js"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+</style>
+<body>
+  <div id="main"></div>
+</body>
+<script>
+
+let notify = function(e, datum) { if (datum) { document.querySelector('body').dispatchEvent(new CustomEvent(e, {detail: datum})) } else { document.querySelector('body').dispatchEvent(new Event(e)) } }
+
+dependents.reload()
+
+</script>
+</html>
